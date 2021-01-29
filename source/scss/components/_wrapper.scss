@@ -1,0 +1,21 @@
+.wrapper{
+    @include card-style;
+    display: flex;
+    position: relative;
+    max-width: 1280px;
+    height: 880px;
+    margin:160px auto;
+    background-color: #EFF3F9;
+    border-radius: 14px
+}
+.wrapper::before{
+    display: inline-block;
+    position: absolute;
+    bottom: 257px;
+    right: 211px;
+    z-index: -1;
+    content: '';
+    width: 1498px;
+    height: 806px;
+    background: url(/source/img/background/background_figure.png) no-repeat center;
+}

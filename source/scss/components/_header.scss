@@ -1,0 +1,82 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 137px;
+    align-items: center;
+    padding: 0 78px 0 48px;
+&__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 362px;
+}
+&__title{
+    @include h1-fontstyle;
+   }
+&__input{
+    width: 153px;
+    height: 32px;
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 12px;
+    padding-left: 38px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: url(/source/img/icons/input__icon.png) no-repeat ;
+    background-color: #FDFDFF;
+    background-position: 18px;
+}
+&__notification{
+    width: 18px;
+    height: 16px;
+    background: url(/source/img/icons/notification-icon.png) no-repeat center;
+}
+&__notification::before{
+    content: ' ';
+    display: block;
+    position: relative;
+    top: -2px;
+    left: 11px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #7F7FD5;
+}
+&__notification::after{
+    content: ' ';
+    display: block;
+    position: relative;
+    top: 8px;
+    left: 6px;
+    width: 7px;
+    height: 3px;
+    border-radius: 0 0 50% 50%;
+    background-color: #979797;
+}
+&__profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+&__avatar{
+    width: 50px;
+    height: 50px;
+    background: url(/source/img/icons/anya_avatar.png)no-repeat center;
+}
+&__avatar::before{
+    content: "";
+    display: block;
+    position: relative;
+    top: 17px;
+    left: 59px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #5B5B5B;
+    border-left: 1px solid #5B5B5B;
+    transform: rotate(-45deg);
+}
+}

@@ -1,0 +1,12 @@
+@mixin card-style{
+    border-radius: 13px;
+    border:1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 13px;    
+}
+@mixin h1-fontstyle{
+    font-family: 'Gilroy';
+    font-weight:700;
+    font-size: 30px;
+    margin: 0;
+}

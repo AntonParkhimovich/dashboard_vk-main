@@ -10,3 +10,17 @@
     font-size: 30px;
     margin: 0;
 }
+@mixin h2-fontstyle{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+@mixin h3-fontstyle{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}

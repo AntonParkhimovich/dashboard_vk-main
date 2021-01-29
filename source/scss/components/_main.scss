@@ -1,4 +1,42 @@
-.header__main{
-display: flex;
-padding:0 45px 0 50px;
+.main__header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main__card{
+    @include card-style;
+    max-width: 341px;
+    width: 32%;
+    padding: 24px 23px;
+
+}
+// .main__card::before{
+//     content: '';
+//     display: block;
+//     width: 26px;
+//     height: 5px;
+//     background: url(/source/img/icons/dot_icon.png) no-repeat right;
+// }
+.main__title{
+    @include h2-fontstyle;
+}
+.main__title::after{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 5px;
+    background: url(/source/img/icons/dot_icon.png) no-repeat right;
+}
+.card__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__subtitle{
+    @include h3-fontstyle;
+
+}
+.main__content{
+    @include h3-fontstyle;
+    color: #979797;
 }
